@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>More</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">This.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="more.html">More</a>
+                </li>
+               
+                
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+
+
+<main>
+  <div class="m-6">
+    <h4>hi! I'm Lucas Henrique, Designer and Developer.<br>I created this site to save references that I see.<br> I hope you like it.</h4>
+</div>
+<section>
+  <div class="container">
+    <div>
+      <div>
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/8054825/original_6193a93a0b24d9b388d66a0e7bc2f4db.jpg?1595193748?bc=0" class="d-block mx-auto w-75" alt="...">
+    </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+    
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        // Manipulador do evento de envio do formulário
+        $('form[role="search"]').submit(function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do formulário
+
+            // Obtém o valor de pesquisa
+            var searchTerm = $(this).find('input[type="search"]').val().toLowerCase();
+
+            // Filtra os cards visíveis
+            $('.searchable-card:visible').each(function() {
+                var cardText = $(this).find('.card-text').text().toLowerCase();
+
+                // Se o texto do card contiver a pesquisa, mantenha-o visível; caso contrário, oculte-o
+                $(this).toggle(cardText.includes(searchTerm));
+            });
+        });
+    });
+</script>
+
+<footer id="site-footer" role="contentinfo" class="clearfix">
+    <div class="copyright">
+        © This.
+        <ul class="social">
+            <li class="noresize">
+                <a href="https://www.instagram.com/graficolucas/" target="_blank">Instagram</a>
+            </li>
+            <li class="noresize">
+                <a href="https://www.linkedin.com/in/graficolucas/" target="_blank">Linkedln</a>
+            </li>
+        
+        </ul>
+        <p>Curitiba<br>
+            Martim Afonso<br>
+            3003<br>
+            Brazil, 80730030<br>
+        </p>
+    </div>
+</footer>
+  </body>
+</html>

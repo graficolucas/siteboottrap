@@ -1,0 +1,43 @@
+
+*{
+    background-color: #ffffff;
+}
+
+
+#site-footer {
+    background-color: #ffffff; /* Cor de fundo do footer (opcional) */
+    padding: 20px; /* Espaçamento interno do footer (opcional) */
+    margin-top: auto; /* Faz com que o footer vá para o final da página */
+    border-top: 1px solid #ccc; /* Adiciona uma borda superior de 1 pixel sólido com cor cinza claro */
+}
+
+.social a {
+    color: black; /* Cor do texto dos links */
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+
+.offices p {
+    margin: 20px 0; /* Adiciona margem ao redor do bloco de endereço */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo da página ocupe pelo menos 100% da altura da viewport */
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.btn {
+    text-align: center;
+    background-color: gray;
+    color: #ffffff;
+}
+
+
+
+
+
